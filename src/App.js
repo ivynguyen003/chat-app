@@ -15,7 +15,6 @@ var config = {
 firebase.initializeApp(config);
 
 class App extends Component {
-  co
 
   render() {
     return (
@@ -24,7 +23,6 @@ class App extends Component {
           <RoomList firebase={firebase}/>
         </main>
       </div>
-
     );
   }
 }
