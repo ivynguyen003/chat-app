@@ -7,15 +7,16 @@ import MessageList from './components/MessageList';
 require('dotenv').config();
 
 var config = {
-  apiKey: process.env.FIREBASE,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_URL,
+  apiKey: process.env.REACT_APP_FIREBASE,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
   projectId: "chat-app-ivy",
-  storageBucket: process.env.FIREBASE_STORAGE,
-  messagingSenderId: process.env.FIREBASE_MESSAGE_ID
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGE_ID
 };
 
-console.log(process.env.REACT_APP_API_URL);
+console.log(process.env.REACT_APP_DATABASE_URL);
+console.log(process.env.REACT_APP_FIREBASE);
 
 firebase.initializeApp(config);
 
