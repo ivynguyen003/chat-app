@@ -4,7 +4,7 @@ import './App.css';
 import * as firebase from 'firebase';
 import RoomList from './components/RoomList';
 import MessageList from './components/MessageList';
-require('dotenv').config();
+require("dotenv").config();
 
 var config = {
   apiKey: process.env.REACT_APP_FIREBASE,
@@ -19,6 +19,7 @@ console.log(process.env.REACT_APP_DATABASE_URL);
 console.log(process.env.REACT_APP_FIREBASE);
 
 firebase.initializeApp(config);
+
 
 class App extends Component {
   constructor(props) {
