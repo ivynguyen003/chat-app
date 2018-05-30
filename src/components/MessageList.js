@@ -36,7 +36,7 @@ class MessageList extends Component {
                 return null;
               } else if (activeKey == message.roomId) {
                 return (
-                  <div key={index} className="message">{message.content}</div>
+                  <p key={index} className="message">{message.content}</p>
                 )
 
               }

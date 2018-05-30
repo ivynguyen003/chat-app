@@ -17,8 +17,11 @@ h2{
 
 h3{
   font-size: 1rem;
-  font-family: 'lato';
-  
+  font-family: 'lato';  
+}
+
+p{
+  font-size: 2rem;
 }
 
 .room-container{
@@ -88,6 +91,20 @@ button{
   box-shadow: -1px 3px 40px -5px #b46958;
   margin: 10px;
   border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap:10px;
+  grid-template-rows:repeat(10,minmax(30px,50px));
+}
+
+.room-active{
+ grid-column:2/span 5;
+ grid-row:4/span 3;
+}
+
+.message{
+  grid-row:6;
+  grid-column: 2/ span 5;
 }
 
 .room-list{

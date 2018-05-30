@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import UserImage from "../profile.png";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import faSearch from "@fortawesome/fontawesome-free-solid/faSearch";
+import faUserPlus from "@fortawesome/fontawesome-free-solid/faUserPlus";
 import "./RoomList.css";
 import "../App.css";
 
@@ -42,14 +42,14 @@ class RoomList extends Component {
   render() {
     return <section>
         <div className="header">
-          <h2>Hello Ivy!</h2>
-          <img className="user" src={UserImage} alt={"user image"} />
+          <h2>Hello Sam!</h2>
+          <img className="user" src={UserImage} alt={"userimage"} />
         </div>
         <div>
           <form onSubmit={e => this.handleSubmit(e)}>
             <input name="text" value={this.state.name} onChange={e => this.handleChange(e)} />
             <button type="submit">
-              <FontAwesomeIcon icon={faSearch} pulse className="search" transform="grow-6" />
+              <FontAwesomeIcon icon={faUserPlus} pulse className="search" transform="grow-6" />
             </button>
           </form>
         </div>
